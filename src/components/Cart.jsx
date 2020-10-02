@@ -11,7 +11,7 @@ const Cart = (props) =>{
 
 const emptyCart=()=>{
     dispatch({type:"EMPTY_CART"});
-    props.history.push("/");
+    props.history.push("/foodapp");
     //POPUP NOTIFICATION 
     toast.success("Cart is deleted successfully.",{position:toast.POSITION.TOP_RIGHT});
 }
