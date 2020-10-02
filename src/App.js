@@ -16,8 +16,8 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Switch>
-            <Route path="/" exact component={Products} />
-            <Route path="/cart" exact component={Cart} />
+            <Route path="/foodapp/" exact component={Products} />
+            <Route path="/foodapp/cart" exact component={Cart} />
             <Route  component={PageNotFound} />
           </Switch>
         </BrowserRouter>
