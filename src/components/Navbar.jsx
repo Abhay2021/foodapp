@@ -7,10 +7,10 @@ const Navbar = () => {
     return(
         <nav>
             <ul className="left">
-                <li><Link to="foodapp/"><img src={logo} alt="logo" /></Link></li>
+                <li><Link to="/foodapp"><img src={logo} alt="logo" /></Link></li>
             </ul>
             <ul className="right">
-                <li ><Link to="foodapp/cart"><span className="shoppingCart dollor"><i className="fas fa-cart-plus"></i></span><span className="shoppingCartTotal">{totalQty}</span></Link></li>
+                <li ><Link to="/foodapp/cart"><span className="shoppingCart dollor"><i className="fas fa-cart-plus"></i></span><span className="shoppingCartTotal">{totalQty}</span></Link></li>
             </ul>
         </nav>
     );
