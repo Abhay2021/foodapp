@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import {CartContext} from '../data/CartContext';
-// import StripeCheckout from 'react-stripe-checkout';
+ import StripeCheckout from 'react-stripe-checkout';
 //https://www.npmjs.com/package/react-stripe-checkout
 //https://www.npmjs.com/package/react-toastify : popup notification
 import { ToastContainer, toast } from 'react-toastify';
@@ -68,7 +68,7 @@ const {shoppingCart,totalPrice,totalQty,dispatch} = useContext(CartContext);//de
                         <div className="items-count">${totalPrice.toFixed(2)}</div>
                     </div>
                     <div className="stripe-section">
-                        {/* <StripeCheckout
+                        <StripeCheckout
                             stripeKey=""
                             token=""
                             billingAddress
@@ -76,7 +76,7 @@ const {shoppingCart,totalPrice,totalQty,dispatch} = useContext(CartContext);//de
                             amount={totalPrice*100}
                         >
                         
-                        </StripeCheckout> */}
+                        </StripeCheckout>
                     </div>
                 </div>
             </div>
